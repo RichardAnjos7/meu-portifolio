@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Richard Anjos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-[#111111] text-white min-h-screen overflow-auto">
+    <header>
+      <nav class="flex justify-between items-center mb-20">
+        <div class="text-xl font-bold">
+          <span class="text-white">RICHARD ANJOS</span>
+          <span class="block text-sm text-gray-500">ANALISTA DE TI</span>
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a href="#home" class="text-[#00ddff] hover:opacity-80 transition-opacity">HOME</a>
+          <a href="#about" class="hover:text-[#00ddff] transition-colors">SOBRE</a>
+          <a href="#experience" class="hover:text-[#00ddff] transition-colors">EXPERIÊNCIA</a>
+          <a href="#technology" class="hover:text-[#00ddff] transition-colors">TECNOLOGIA</a>
+          <a href="#portfolio" class="hover:text-[#00ddff] transition-colors">PORTIFÓLIO</a>
+          <a href="https://drive.google.com/file/d/1BvFvFNO7lGbW6q6t8K5vJJIDj1RZZ13a/view?usp=sharing" target="_blank" class="hover:text-[#00ddff] transition-colors">CURRÍCULO</a>
+          <a href="#contact" class="hover:text-[#00ddff] transition-colors">CONTATO</a>
+        </div>
+        <button
+          class="hamburger md:hidden flex flex-col justify-center items-center w-8 h-8"
+          aria-label="Menu"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </nav>
+    </header>
+    
+
+    <main class="container mx-auto px-4 py-8 relative z-10">
+      <section id="home" class="mb-32 fade-in">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <img
+            src="imagens/perfil.jpeg"
+            alt="Foto de perfil de Richard Anjos"
+            class="w-64 h-64 rounded-full object-cover border-4 border-[#00ddff]"
+          />
+          <div>
+            <h1 class="text-4xl font-bold mb-6 leading-tight">
+              Olá <span class="text-[#00ddff]">🙂</span><br />
+              <span class="text-gray-500">Um DEV em evolução... 🚀</span>
+            </h1>
+            <div class="flex gap-4 mt-6">
+              <a href="#" class="tech-icon">
+                <img
+                  src="https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor"
+                  class="w-8 h-8"
+                  alt="CSS"
+                />
+              </a>
+              <a href="#" class="tech-icon">
+                <img
+                  src="https://icongr.am/devicon/javascript-original.svg?size=128&color=currentColor"
+                  class="w-8 h-8"
+                  alt="JavaScript"
+                />
+              </a>
+              <a href="#" class="tech-icon">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  class="w-8 h-8"
+                  alt="Python"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="mb-32 fade-in">
+        <h2 class="text-2xl font-bold text-[#00ddff]">SOBRE</h2>
+        <br />
+        <div class="flex flex-col md:flex-row gap-8 items-start">
+          <div>
+            <p class="text-gray-400 text-xl mb-6">
+              Sou um profissional de tecnologia com sólida experiência na análise, diagnóstico e solução de problemas técnicos, 
+              além da implementação de melhorias em infraestrutura e automação de processos. Atuo na instalação, configuração e 
+              manutenção de equipamentos, gestão de redes e segurança da informação, sempre buscando otimizar operações empresariais. 
+              Também sou proficiente em programação, com experiência em HTML, CSS, Python e JavaScript, utilizando essas linguagens 
+              para criar soluções eficientes, melhorar interfaces de usuário e automatizar tarefas, contribuindo para o desenvolvimento 
+              e inovação de sistemas.
+            </p>
+            <div class="flex gap-4 mt-1">
+              <a
+                href="https://www.linkedin.com/in/richardanjos/"
+                class="w-10 h-10 bg-[#0077B5] rounded-full flex items-center justify-center hover:opacity-80 transition-opacity"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                  class="w-6 h-6"
+                  alt="LinkedIn"
+                />
+              </a>
+              <a
+                href="https://github.com/RichardAnjos7"
+                class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:opacity-80 transition-opacity"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                  class="w-6 h-6"
+                  alt="GitHub"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="w-full max-w-6xl relative mb-32">
+        <h2 class="text-2xl font-bold text-[#00ddff] mb-4 neon-text">
+            Competências
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="md:col-span-2 flex flex-col">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <span class="text-[#00ff9d]">🎓</span>
+                        <span class="ml-2">Formação</span>
+                    </h3>
+    
+                    <div class="space-y-6">
+                      <div class="tech-card p-3 rounded-xl border border-gray-800 hover:border-[#00ddff] transition-all relative group cursor-pointer duration-300">
+                        <div class="flex items-start justify-between">
+                            <h4 class="font-bold mb-2 text-xl">Análise e Desenvolvimento de Sistemas</h4>
+                            <div class="px-3 py-1 bg-[#00ddff]/10 rounded-full text-[#00ddff] text-xs">Em andamento</div>
+                        </div>
+                        <p class="text-[#00ddff] text-sm mb-2">Martha Falcão Wyden</p>
+                        <div class="absolute top-0 left-0 w-full h-full bg-white bg-opacity-90 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+                            <div class="flex space-x-4 mb-4">
+                                <div class="flex flex-col items-center">
+                                    <embed src="pdf/decla_matri_wyden.pdf" type="application/pdf" width="113%" height="70%" />
+                                    <a href="pdf/decla_matri_wyden.pdf" class="text-[#00ddff] underline bg-white px-3 py-1 rounded-lg shadow-md mt-2" target="_blank" download>Baixar Declaração Matrícula</a>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <embed src="pdf/histori_wyden.pdf" type="application/pdf" width="113%" height="70%" />
+                                    <a href="pdf/histori_wyden.pdf" class="text-[#00ddff] underline bg-white px-3 py-1 rounded-lg shadow-md mt-2" target="_blank" download>Baixar Histórico Escolar</a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="tech-card p-3 rounded-xl border border-gray-800 hover:border-[#00ddff] transition-all relative group cursor-pointer duration-300">
+                        <div class="flex items-start justify-between">
+                            <h4 class="font-bold mb-2 text-xl">Técnico de Informática</h4>
+                            <div class="px-3 py-1 bg-[#00ddff]/10 rounded-full text-[#00ddff] text-xs">2025</div>
+                        </div>
+                        <p class="text-[#00ddff] text-sm mb-2">Instituto Brasileiro de Qualificação Profissional - IBQP</p>
+                        <div class="absolute top-0 left-0 w-full h-full bg-white bg-opacity-90 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+                            <div class="flex space-x-4 mb-4">
+                                <div class="flex flex-col items-center">
+                                    <embed src="pdf/tec_informatica.pdf" type="application/pdf" width="113%" height="70%" />
+                                    <a href="pdf/tec_informatica.pdf" class="text-[#00ddff] underline bg-white px-3 py-1 rounded-lg shadow-md mt-2" target="_blank" download>Baixar Certificado</a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+    
+                    <div class="mt-8">
+                      <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <span class="text-[#00ff9d]">📜</span>
+                        <span class="ml-2">Certificados</span>
+                      </h3>
+                    </div>
+    
+                    <div class="tech-card p-3 rounded-xl border border-gray-800 hover:border-[#00ddff] transition-all relative group cursor-pointer duration-300">
+                      <div class="flex items-start justify-between">
+                          <h4 class="font-bold mb-2 text-xl">Arquitetura de Redes</h4>
+                          <div class="px-3 py-1 bg-[#00ddff]/10 rounded-full text-[#00ddff] text-xs">2025</div>
+                      </div>
+                      <p class="text-[#00ddff] text-sm mb-2">Udemy</p>
+                      <div class="absolute top-0 left-0 w-full h-full bg-white bg-opacity-90 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+                          <div class="flex space-x-4 mb-4">
+                              <div class="flex flex-col items-center">
+                                  <embed src="pdf/arquitetura_de_redes.pdf" type="application/pdf" width="113%" height="70%" />
+                                  <a href="pdf/arquitetura_de_redes.pdf" class="text-[#00ddff] underline bg-white px-3 py-1 rounded-lg shadow-md mt-2" target="_blank" download>Baixar Certificado</a>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+            
+                    <div class="tech-card p-3 rounded-xl border border-gray-800 hover:border-[#00ddff] transition-all relative group cursor-pointer duration-300">
+                      <div class="flex items-start justify-between">
+                          <h4 class="font-bold mb-2 text-xl">Configurador Protheus</h4>
+                          <div class="px-3 py-1 bg-[#00ddff]/10 rounded-full text-[#00ddff] text-xs">2024</div>
+                      </div>
+                      <p class="text-[#00ddff] text-sm mb-2">Udemy</p>
+                      <div class="absolute top-0 left-0 w-full h-full bg-white bg-opacity-90 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+                          <div class="flex space-x-4 mb-4">
+                              <div class="flex flex-col items-center">
+                                  <embed src="pdf/configurador_protheus.pdf" type="application/pdf" width="113%" height="70%" />
+                                  <a href="pdf/configurador_protheus.pdf" class="text-[#00ddff] underline bg-white px-3 py-1 rounded-lg shadow-md mt-2" target="_blank" download>Baixar Certificado</a>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+            
+                    <div class="tech-card p-3 rounded-xl border border-gray-800 hover:border-[#00ddff] transition-all relative group cursor-pointer duration-300">
+                      <div class="flex items-start justify-between">
+                          <h4 class="font-bold mb-2 text-xl">Manutenção em Nobreaks</h4>
+                          <div class="px-3 py-1 bg-[#00ddff]/10 rounded-full text-[#00ddff] text-xs">2024</div>
+                      </div>
+                      <p class="text-[#00ddff] text-sm mb-2">Udemy</p>
+                      <div class="absolute top-0 left-0 w-full h-full bg-white bg-opacity-90 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+                          <div class="flex space-x-4 mb-4">
+                              <div class="flex flex-col items-center">
+                                  <embed src="pdf/manutencao_nobreaks.pdf" type="application/pdf" width="113%" height="70%" />
+                                  <a href="pdf/manutencao_nobreaks.pdf" class="text-[#00ddff] underline bg-white px-3 py-1 rounded-lg shadow-md mt-2" target="_blank" download>Baixar Certificado</a>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+            
+                    <div class="tech-card p-3 rounded-xl border border-gray-800 hover:border-[#00ddff] transition-all relative group cursor-pointer duration-300">
+                      <div class="flex items-start justify-between">
+                          <h4 class="font-bold mb-2 text-xl">Computação em Nuvem</h4>
+                          <div class="px-3 py-1 bg-[#00ddff]/10 rounded-full text-[#00ddff] text-xs">2024</div>
+                      </div>
+                      <p class="text-[#00ddff] text-sm mb-2">Ka Solutions</p>
+                      <div class="absolute top-0 left-0 w-full h-full bg-white bg-opacity-90 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+                          <div class="flex space-x-4 mb-4">
+                              <div class="flex flex-col items-center">
+                                  <embed src="pdf/computacao_nuvem.pdf" type="application/pdf" width="113%" height="70%" />
+                                  <a href="pdf/computacao_nuvem.pdf" class="text-[#00ddff] underline bg-white px-3 py-1 rounded-lg shadow-md mt-2" target="_blank" download>Baixar Certificado</a>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+            
+                    <div class="tech-card p-3 rounded-xl border border-gray-800 hover:border-[#00ddff] transition-all relative group cursor-pointer duration-300">
+                      <div class="flex items-start justify-between">
+                          <h4 class="font-bold mb-2 text-xl">Desenvolvimento Android - Introdução</h4>
+                          <div class="px-3 py-1 bg-[#00ddff]/10 rounded-full text-[#00ddff] text-xs">2024</div>
+                      </div>
+                      <p class="text-[#00ddff] text-sm mb-2">Samsung Ocean</p>
+                      <div class="absolute top-0 left-0 w-full h-full bg-white bg-opacity-90 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+                          <div class="flex space-x-4 mb-4">
+                              <div class="flex flex-col items-center">
+                                  <embed src="pdf/android_1.pdf" type="application/pdf" width="113%" height="70%" />
+                                  <a href="pdf/android_1.pdf" class="text-[#00ddff] underline bg-white px-3 py-1 rounded-lg shadow-md mt-2" target="_blank" download>Baixar Certificado 1</a>
+                              </div>
+                              <div class="flex flex-col items-center">
+                                  <embed src="pdf/android_2.pdf" type="application/pdf" width="113%" height="70%" />
+                                  <a href="pdf/android_2.pdf" class="text-[#00ddff] underline bg-white px-3 py-1 rounded-lg shadow-md mt-2" target="_blank" download>Baixar Certificado 2</a>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+            
+                  <div class="tech-card p-3 rounded-xl border border-gray-800 hover:border-[#00ddff] transition-all relative group cursor-pointer duration-300">
+                    <div class="flex items-start justify-between">
+                        <h4 class="font-bold mb-2 text-xl">Python - Consultando Bases SQL</h4>
+                        <div class="px-3 py-1 bg-[#00ddff]/10 rounded-full text-[#00ddff] text-xs">2024</div>
+                    </div>
+                    <p class="text-[#00ddff] text-sm mb-2">Samsung Ocean</p>
+                    <div class="absolute top-0 left-0 w-full h-full bg-white bg-opacity-90 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+                        <div class="flex space-x-4 mb-4">
+                            <div class="flex flex-col items-center">
+                                <embed src="pdf/python_sql_1.pdf" type="application/pdf" width="113%" height="70%" />
+                                <a href="pdf/python_sql_1.pdf" class="text-[#00ddff] underline bg-white px-3 py-1 rounded-lg shadow-md mt-2" target="_blank" download>Baixar Certificado 1</a>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <embed src="pdf/python_sql_2.pdf" type="application/pdf" width="113%" height="70%" />
+                                <a href="pdf/python_sql_2.pdf" class="text-[#00ddff] underline bg-white px-3 py-1 rounded-lg shadow-md mt-2" target="_blank" download>Baixar Certificado 2</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            
+                    <div class="tech-card p-3 rounded-xl border border-gray-800 hover:border-[#00ddff] transition-all relative group cursor-pointer duration-300">
+                      <div class="flex items-start justify-between">
+                          <h4 class="font-bold mb-2 text-xl">Python - Orientação a Objetos</h4>
+                          <div class="px-3 py-1 bg-[#00ddff]/10 rounded-full text-[#00ddff] text-xs">2024</div>
+                      </div>
+                      <p class="text-[#00ddff] text-sm mb-2">Samsung Ocean</p>
+                      <div class="absolute top-0 left-0 w-full h-full bg-white bg-opacity-90 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+                          <div class="flex space-x-4 mb-4">
+                              <div class="flex flex-col items-center">
+                                  <embed src="pdf/python_objetos_1.pdf" type="application/pdf" width="113%" height="70%" />
+                                  <a href="pdf/python_objetos_1.pdf" class="text-[#00ddff] underline bg-white px-3 py-1 rounded-lg shadow-md mt-2" target="_blank" download>Baixar Certificado 1</a>
+                              </div>
+                              <div class="flex flex-col items-center">
+                                  <embed src="pdf/python_objetos_2.pdf" type="application/pdf" width="113%" height="70%" />
+                                  <a href="pdf/python_objetos_2.pdf" class="text-[#00ddff] underline bg-white px-3 py-1 rounded-lg shadow-md mt-2" target="_blank" download>Baixar Certificado 2</a>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+            
+                    <div class="tech-card p-3 rounded-xl border border-gray-800 hover:border-[#00ddff] transition-all relative group cursor-pointer duration-300">
+                      <div class="flex items-start justify-between">
+                          <h4 class="font-bold mb-2 text-xl">Excel</h4>
+                          <div class="px-3 py-1 bg-[#00ddff]/10 rounded-full text-[#00ddff] text-xs">2024</div>
+                      </div>
+                      <p class="text-[#00ddff] text-sm mb-2">Nerdin</p>
+                      <div class="absolute top-0 left-0 w-full h-full bg-white bg-opacity-90 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+                          <div class="flex space-x-4 mb-4">
+                              <div class="flex flex-col items-center">
+                                  <embed src="pdf/excel.pdf" type="application/pdf" width="113%" height="70%" />
+                                  <a href="pdf/excel.pdf" class="text-[#00ddff] underline bg-white px-3 py-1 rounded-lg shadow-md mt-2" target="_blank" download>Baixar Certificado</a>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    
+                    <div class="tech-card p-3 rounded-xl border border-gray-800 hover:border-[#00ddff] transition-all relative group cursor-pointer duration-300">
+                      <div class="flex items-start justify-between">
+                          <h4 class="font-bold mb-2 text-xl">Montagem e Manutenção em Computadores</h4>
+                          <div class="px-3 py-1 bg-[#00ddff]/10 rounded-full text-[#00ddff] text-xs">2022</div>
+                      </div>
+                      <p class="text-[#00ddff] text-sm mb-2">CEPED</p>
+                      <div class="absolute top-0 left-0 w-full h-full bg-white bg-opacity-90 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+                          <div class="flex space-x-4 mb-4">
+                              <div class="flex flex-col items-center">
+                                  <embed src="pdf/montagem_manutencao_pc.pdf" type="application/pdf" width="113%" height="70%" />
+                                  <a href="pdf/montagem_manutencao_pc.pdf" class="text-[#00ddff] underline bg-white px-3 py-1 rounded-lg shadow-md mt-2" target="_blank" download>Baixar Certificado</a>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    
+                    <div class="tech-card p-3 rounded-xl border border-gray-800 hover:border-[#00ddff] transition-all relative group cursor-pointer duration-300">
+                      <div class="flex items-start justify-between">
+                          <h4 class="font-bold mb-2 text-xl">Informática Básica e Avançada</h4>
+                          <div class="px-3 py-1 bg-[#00ddff]/10 rounded-full text-[#00ddff] text-xs">2009</div>
+                      </div>
+                      <p class="text-[#00ddff] text-sm mb-2">COMPUTEC</p>
+                      <div class="absolute top-0 left-0 w-full h-full bg-white bg-opacity-90 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+                          <div class="flex space-x-4 mb-4">
+                              <div class="flex flex-col items-center">
+                                  <embed src="pdf/info_basic_avan.pdf" type="application/pdf" width="113%" height="70%" />
+                                  <a href="pdf/info_basic_avan.pdf" class="text-[#00ddff] underline bg-white px-3 py-1 rounded-lg shadow-md mt-2" target="_blank" download>Baixar Certificado</a>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>  <br />   <br />     
+      </section>
+
+      <section id="experience" class="mt-20 mb-20">
+            <div>
+              <h3 class="text-2xl font-bold mb-6 flex items-center">
+                  <span class="text-[#00ff9d]">🧑‍💻</span>
+                  <span class="ml-2">Experiência</span>
+              </h3>
+              <div class="space-y-6">
+                  <div class="experience-item fade-in">
+                      <h3 class="text-xl font-bold mb-2">Analista de Suporte Jr</h3>
+                      <p class="text-[#00ddff] mb-4">Magnum Indústria da Amazônia SA</p>
+                      <ul class="text-gray-400 list-disc pl-5">
+                          <li>Identificação e solução de problemas técnicos, com foco em melhorias e otimização.</li>
+                          <li>Desenvolvimento de softwares em Python para automação de atividades diárias.</li>
+                          <li>Instalação, configuração e manutenção de impressoras térmicas e desktops.</li>
+                          <li>Configuração e gerenciamento de servidores e máquinas virtuais (VMs).</li>
+                          <li>Configuração e gerenciamento de redes, switches e firewall (Fortigate).</li>
+                          <li>Administração e gerenciamento de Active Directory e Windows Server.</li>
+                          <li>Implementação de projetos e melhorias em infraestrutura de TI.</li>
+                          <li>Manutenção preventiva e corretiva de equipamentos.</li>
+                          <li>Administração e gerenciamento de VOIP em nuvem.</li>
+                          <li>Formatação e instalação de sistemas operacionais.</li>
+                          <li>Suporte a usuários, presencial e remoto.</li>
+                          <li>Suporte a sistema ERP Protheus (Totvs).</li>
+                      </ul>
+                  </div>
+                  <br />
+  
+                  <div class="experience-item fade-in">
+                      <h3 class="text-xl font-bold mb-2">Apoio Técnico</h3>
+                      <p class="text-[#00ddff] mb-4">Ilha Service Tecnologia</p>
+                      <ul class="text-gray-400 list-disc pl-5">
+                          <li>Suporte Técnico a computadores e impressoras.</li>
+                          <li>Formatação de sistemas operacionais.</li>
+                          <li>Atendimento ao usuário e público.</li>
+                          <li>Organização de documentos.</li>
+                          <li>Configuração de Redes.</li>
+                          <li>Transmissão de dados.</li>
+                          <li>Coleta de dados.</li>
+                      </ul>
+                  </div>
+                  <br />
+  
+                  <div class="experience-item fade-in">
+                      <h3 class="text-xl font-bold mb-2">Técnico de Informática</h3>
+                      <p class="text-[#00ddff] mb-4">Aletech</p>
+                      <ul class="text-gray-400 list-disc pl-5">
+                          <li>Instalação, configuração e manutenção de Coletores de Dados, Impressoras Térmicas e Leitores de Códigos de Barras.</li>
+                          <li>Administração e gerenciamento de câmeras e sistemas de segurança CFTV.</li>
+                          <li>Administração e gerenciamento de Active Directory e Windows Server.</li>
+                          <li>Administração e gerenciamento de coletores usando sistema MDM.</li>
+                          <li>Suporte e resolução de problemas a usuários presencial e remoto.</li>
+                          <li>Administração e gerenciamento de e-mails (Locaweb).</li>
+                          <li>Formatação e instalação de sistemas operacionais.</li>
+                          <li>Manutenção preventiva e corretiva de equipamentos.</li>
+                          <li>Planejamento e implementação de soluções AIDC.</li>
+                          <li>Gestão de projetos de automação industrial.</li>
+                          <li>Configuração e manutenção em notebooks.</li>
+                          <li>Desenvolvimento de planilhas.</li>
+                      </ul>
+                  </div>
+                  <br />
+  
+                  <div class="experience-item fade-in">
+                      <h3 class="text-xl font-bold mb-2">Técnico de Informática</h3>
+                      <p class="text-[#00ddff] mb-4">Helptech Tecnologia</p>
+                      <ul class="text-gray-400 list-disc pl-5">
+                          <li>Gerenciamento e configuração de câmeras e sistemas de segurança CFTV.</li>
+                          <li>Administração e gerenciamento de Active Directory e Windows Server.</li>
+                          <li>Instalação, configuração e manutenção de Impressoras Térmicas.</li>
+                          <li>Manutenção, diagnóstico e reparo em Computadores e Nobreaks.</li>
+                          <li>Desenvolvimento de softwares para automatizar atividades diárias.</li>
+                          <li>Formatação e instalação de sistemas operacionais.</li>
+                          <li>Gerenciamento de e-mails Microsoft Office Admin.</li>
+                          <li>Manutenção preventiva e corretiva de equipamentos.</li>
+                          <li>Suporte em sistema ERP Datasul (Totvs).</li>
+                          <li>Administração e gerenciamento de PABX.</li>
+                      </ul>
+                  </div>
+                  <br />
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="technology" class="mt-20 mb-20">
+        <h2 class="text-2xl font-bold text-[#00ddff] mb-2">TECNOLOGIAS</h2>
+        <br />
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div class="tech-card p-6 rounded-lg fade-in">
+            <h4 class="text-lg font-bold mb-4 flex items-center gap-2">
+              <span class="text-[#00ddff]">💻🔧 </span> Ferramentas
+            </h4>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-[#00ddff] rounded-full"></div>
+                <span>VS Code</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-[#00ddff] rounded-full"></div>
+                <span>Git</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-[#00ddff] rounded-full"></div>
+                <span>GitHub</span>
+              </div>
+            </div>
+          </div>
+          <div class="tech-card p-6 rounded-lg fade-in">
+            <h4 class="text-lg font-bold mb-4 flex items-center gap-2">
+              <span class="text-[#00ddff]">🐍📚 </span> Bibliotecas
+            </h4>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-[#00ddff] rounded-full"></div>
+                <span>Pandas</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-[#00ddff] rounded-full"></div>
+                <span>PyAutoGUI</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-[#00ddff] rounded-full"></div>
+                <span>OpenPyXl</span>
+              </div>
+            </div>
+          </div>
+          <div class="tech-card p-6 rounded-lg fade-in">
+            <h4 class="text-lg font-bold mb-4 flex items-center gap-2">
+              <span class="text-[#00ddff]">☕🌐 </span> Linguagens
+            </h4>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-[#00ddff] rounded-full"></div>
+                <span>JavaScript</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-[#00ddff] rounded-full"></div>
+                <span>HTML/CSS</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-[#00ddff] rounded-full"></div>
+                <span>Python</span>
+              </div>
+            </div>
+          </div>
+          <div class="tech-card p-6 rounded-lg fade-in">
+            <h4 class="text-lg font-bold mb-4 flex items-center gap-2">
+              <span class="text-[#00ddff]">🪟 </span> Sistemas
+            </h4>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-[#00ddff] rounded-full"></div>
+                <span>Protheus</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-[#00ddff] rounded-full"></div>
+                <span>GLPI</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-[#00ddff] rounded-full"></div>
+                <span>Fortigate</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-[#00ddff] rounded-full"></div>
+                <span>OCS</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-[#00ddff] rounded-full"></div>
+                <span>MDM</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-[#00ddff] rounded-full"></div>
+                <span>Windows Server</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="mb-32">
+        <h2 class="text-2xl font-bold text-[#00ddff] mb-2">PORTFOLIO</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Projeto 1 - Vídeo -->
+            <div class="portfolio-card rounded-lg overflow-hidden fade-in">
+                <div class="relative">
+                    <video class="w-full h-48 object-cover cursor-pointer" muted loop>
+                        <source src="videos/emails-automatizados.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos.
+                    </video>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-bold mb-2">E-mail Automatizado</h3>
+                    <p class="text-gray-400 mb-1">
+                        Desenvolvimento de um design responsivo, alinhado à identidade visual.
+                    </p>
+                    <a href="https://github.com/RichardAnjos7/emails_automatizados"
+                        class="w-7 h-7 bg-white rounded-full flex items-center justify-center hover:opacity-80 transition-opacity">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            class="w-6 h-6" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Projeto 2 - Imagem -->
+            <div class="portfolio-card rounded-lg overflow-hidden fade-in">
+                <img src="imagens/login_GO.png" alt="Blitz Café" class="w-full h-48 object-cover" />
+                <div class="p-6">
+                    <h3 class="text-lg font-bold mb-2">Tela Login</h3>
+                    <p class="text-gray-400 mb-1">
+                      Desenvolvimento de uma tela de login com autenticação e com css
+                      moderno.
+                    </p>
+                    <a href="https://github.com/RichardAnjos7/tela_login"
+                        class="w-7 h-7 bg-white rounded-full flex items-center justify-center hover:opacity-80 transition-opacity">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            class="w-6 h-6" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Projeto 3 - Em Desenvolvimento -->
+            <div class="portfolio-card rounded-lg overflow-hidden fade-in">
+                <img src="imagens/desenv1.webp" alt="Projeto em desenvolvimento" class="w-full h-48 object-cover" />
+                <div class="p-6">
+                    <h3 class="text-lg font-bold mb-2">App</h3>
+                    <p class="text-gray-400 mb-4">Em desenvolvimento...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const videos = document.querySelectorAll(".portfolio-card video");
+    
+            videos.forEach(video => {
+                // Inicia a prévia ao passar o mouse
+                video.addEventListener("mouseover", function () {
+                    video.play();
+                });
+    
+                // Para o vídeo ao tirar o mouse e volta para o início
+                video.addEventListener("mouseout", function () {
+                    setTimeout(() => {
+                        if (!video.matches(":hover")) {
+                            video.pause();
+                            video.currentTime = 0;
+                        }
+                    }, 200);
+                });
+    
+                // Clica para abrir em tela cheia
+                video.addEventListener("click", function () {
+                    if (video.requestFullscreen) {
+                        video.requestFullscreen();
+                    } else if (video.mozRequestFullScreen) { // Firefox
+                        video.mozRequestFullScreen();
+                    } else if (video.webkitRequestFullscreen) { // Chrome, Safari e Opera
+                        video.webkitRequestFullscreen();
+                    } else if (video.msRequestFullscreen) { // IE/Edge
+                        video.msRequestFullscreen();
+                    }
+                });
+            });
+        });
+    </script>
+    
+    <section id="contact" class="mb-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold text-[#00ddff]">CONTATO</h2>
+        <br />
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="contact-card p-8 rounded-xl fade-in group">
+            <div class="flex items-center gap-6">
+              <div
+                class="contact-icon w-14 h-14 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-7 w-7 text-[#00ddff]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Email</h3>
+                <a
+                  href="mailto:richardanjos1995@gmail.com"
+                  class="text-gray-400 hover:text-[#00ddff] transition-colors"
+                  >richardanjos1995@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="contact-card p-8 rounded-xl fade-in group">
+            <div class="flex items-center gap-6">
+              <div
+                class="contact-icon w-14 h-14 rounded-full flex items-center justify-center"
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-7 w-7 text-[#00ddff]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 2.5H8C6.067 2.5 5 3.567 5 5.5v13c0 1.933 1.067 3 3 3h8c1.933 0 3-1.067 3-3v-13c0-1.933-1.067-3-3-3zM12 19c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zM16 5.5v1.5H8V5.5h8z"
+              />
+              </svg>
+
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Contato</h3>
+                <p class="text-gray-400">(92) 99481-1680</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-card p-8 rounded-xl fade-in group">
+            <div class="flex items-center gap-6">
+              <div
+                class="contact-icon w-14 h-14 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-7 w-7 text-[#00ddff]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Social</h3>
+                <div class="flex gap-4 mt-2">
+                    <a
+                        href="https://www.linkedin.com/in/richardanjos/"
+                        class="w-10 h-10 bg-[#181717] rounded-full flex items-center justify-center hover:opacity-80 transition-opacity"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                    >
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                            class="w-6 h-6"
+                            alt="LinkedIn"
+                        />
+                    </a>
+                    <a
+                        href="https://github.com/RichardAnjos7"
+                        class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:opacity-80 transition-opacity"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        aria-label="GitHub"
+                    >
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            class="w-6 h-6"
+                            alt="GitHub"
+                        />
+                    </a>
+                </div>
+            </div>            
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-1 p-8 contact-card rounded-xl fade-in">
+          <h3 class="text-2xl font-bold mb-6">Envie uma mensagem</h3>
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/mqaplvvo"
+            method="POST"
+            class="space-y-6"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-400 mb-2">Nome</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full px-4 py-3 bg-[#222222] border border-gray-700 rounded-lg focus:outline-none focus:border-[#00ddff] transition-colors text-white"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-400 mb-2">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full px-4 py-3 bg-[#222222] border border-gray-700 rounded-lg focus:outline-none focus:border-[#00ddff] transition-colors text-white"
+                  required
+                />
+              </div>
+            </div>
+            <div>
+              <label for="subject" class="block text-sm font-medium text-gray-400 mb-2">Assunto</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                class="w-full px-4 py-3 bg-[#222222] border border-gray-700 rounded-lg focus:outline-none focus:border-[#00ddff] transition-colors text-white"
+                required
+              />
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-400 mb-2">Mensagem</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="w-full px-4 py-3 bg-[#222222] border border-gray-700 rounded-lg focus:outline-none focus:border-[#00ddff] transition-colors text-white resize-none"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="w-full md:w-auto px-8 py-3 bg-[#00ddff] text-black font-semibold rounded-lg hover:bg-opacity-90 transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#00ff9d] focus:ring-opacity-50"
+              >
+                Enviar
+              </button>
+            </div>
+          </form>
+          
+          <div id="thank-you-message" style="display: none;">
+            <h4 class="text-2xl font-semibold">Obrigado, assim que possível irei ler sua mensagem.</h4>
+            <p>Seu formulário foi enviado com sucesso!</p>
+          </div>
+        </div>
+        
+        <script>
+          document.getElementById("contact-form").addEventListener("submit", async function (event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+        
+            let form = event.target;
+            let formData = new FormData(form);
+        
+            let response = await fetch(form.action, {
+              method: form.method,
+              body: formData,
+              headers: {
+                'Accept': 'application/json'
+              }
+            });
+        
+            if (response.ok) {
+              form.style.display = "none"; // Oculta o formulário após envio bem-sucedido
+              document.getElementById("thank-you-message").style.display = "block"; // Exibe a mensagem de agradecimento
+            } else {
+              alert("Ocorreu um erro ao enviar sua mensagem. Tente novamente.");
+            }
+          });
+        </script>
+    </section>
+  </main>
+
+  <footer class="border-t border-gray-800 py-12 mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 w-full">
+        <div class="col-span-1 md:col-span-2 flex flex-col items-center text-center">
+          <div class="text-xl font-bold mb-4">
+            <span class="text-white">RICHARD ANJOS</span>
+            <span class="block text-sm text-gray-400 mt-1">
+              ANALISTA DE TECNOLOGIA DA INFORMAÇÃO
+            </span>
+          </div>
+          <p class="text-gray-400 text-sm mb-6 max-w-lg">
+            Solucionando problemas técnicos, aprimorando a infraestrutura da
+            empresa e desenvolvendo sistemas para otimizar a integração com o
+            usuário e automatizar processos.
+          </p>
+        </div>
+        
+        <div class="flex flex-col items-center text-center">
+          <h4 class="text-lg font-semibold mb-4">Social</h4>
+          <div class="flex space-x-4">
+            <a
+              href="https://www.linkedin.com/in/richardanjos/"
+              target="_blank"
+              id="linkedin"
+              class="w-10 h-10 bg-[#222222] rounded-full flex items-center justify-center hover:bg-[#00ddff] transition-all transform hover:scale-110"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                class="w-5 h-5"
+                alt="LinkedIn"
+              />
+            </a>
+            <a
+              href="https://github.com/RichardAnjos7"
+              id="github"
+              class="w-10 h-10 bg-[#222222] rounded-full flex items-center justify-center hover:bg-[#00ddff] transition-all transform hover:scale-110"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                class="w-5 h-5"
+                alt="GitHub"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div
+        class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
+      >
+        <p class="text-gray-400 text-sm mb-4 md:mb-0">
+          © 2025 Richard Anjos. Todos os direitos reservados.
+        </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
